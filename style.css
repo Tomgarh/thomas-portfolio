@@ -719,86 +719,105 @@ footer{
     RESPONSIVE
 ===========================*/
 
-@media(max-width:992px){
+@media (max-width:768px){
 
-.about-content{
-
-    grid-template-columns:1fr;
-    text-align:center;
-
-}
-
-.about-image{
-
-    max-width:380px;
-    margin:auto;
-
-}
-
-.about-image::before{
-
-    display:none;
-
-}
-
-.stats{
-
-    justify-content:center;
-    flex-wrap:wrap;
-
-}
-
-.highlight{
-
-    text-align:left;
-
-}
-
-.about-buttons{
-
-    justify-content:center;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.about{
-
-    padding:70px 0;
-
-}
-
-.about-header h2{
-
-    font-size:2.2rem;
-
-}
-
-.about-text h3{
-
-    font-size:1.7rem;
-
-}
-
-.stats{
-
-    flex-direction:column;
-
-}
-
-.about-buttons{
-
-    flex-direction:column;
-
-}
-
-.primary-btn,
-.secondary-btn{
-
-    text-align:center;
-
-}
-
-}
+    /* HEADER */
+    
+    header{
+        padding:10px 0;
+    }
+    
+    .nav-container{
+        flex-direction:column;
+        justify-content:center;
+        gap:15px;
+        height:auto;
+        padding:15px 0;
+    }
+    
+    .logo{
+        font-size:1.5rem;
+    }
+    
+    .nav-links{
+        gap:20px;
+        justify-content:center;
+        flex-wrap:wrap;
+        padding:0;
+    }
+    
+    .nav-links a{
+        font-size:.95rem;
+    }
+    
+    .hire-btn{
+        width:100%;
+        max-width:220px;
+        text-align:center;
+    }
+    
+    /* ABOUT */
+    
+    .about{
+        padding:70px 0;
+    }
+    
+    .about-header h2{
+        font-size:2.2rem;
+    }
+    
+    .about-content{
+        grid-template-columns:1fr;
+        gap:40px;
+        text-align:center;
+    }
+    
+    .about-image{
+        width:100%;
+        max-width:320px;
+        margin:auto;
+    }
+    
+    .about-image img{
+        width:100%;
+        height:auto;
+    }
+    
+    .about-text h3{
+        font-size:1.7rem;
+    }
+    
+    .stats{
+        flex-direction:column;
+    }
+    
+    .about-buttons{
+        flex-direction:column;
+    }
+    
+    .primary-btn,
+    .secondary-btn{
+        text-align:center;
+    }
+    
+    /* PROJECTS */
+    
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+    
+    .project-card img{
+        height:220px;
+    }
+    
+    /* CONTACT */
+    
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+    
+    .service-list{
+        grid-template-columns:1fr;
+    }
+    
+    }
